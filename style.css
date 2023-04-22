@@ -17,6 +17,7 @@ body {
 
 .full-image {
   width: 100%;
+  display: block;
 }
 
 .more-info {
@@ -55,6 +56,10 @@ input, button {
   cursor: pointer;
 }
 
+.btn_del{
+  margin: 2px 0 -1px;
+}
+
 .btn:hover {
   color: #3a3A3a;
 }
@@ -91,7 +96,7 @@ input#new-task {
 /* Task list */
 .task {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 18px 0;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
@@ -100,13 +105,7 @@ input#new-task {
 
 .task__input,
 .task__label {
-  margin: 0;
   font-size: 18px;
-  line-height: 18px;
-  font-family: "Lato", sans-serif;
-  color: #888;
-  width: 226px;
-  display: inline-block;
   flex-grow: 1;
 }
 
@@ -117,6 +116,10 @@ input#new-task {
   border: 1px solid #dDd;
   background: #FFF;
   border-radius: 6px;
+  box-sizing: border-box;
+  line-height: 18px;
+  font-family: "Lato", sans-serif;
+  color: #888;
 }
 
 .task__input:focus {
@@ -125,7 +128,7 @@ input#new-task {
 
 .task__label {
   padding-left: 10px;
-  box-sizing: border-box;
+  line-height: 18px;
 }
 
 .task__checkbox {
